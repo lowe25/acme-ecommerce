@@ -114,6 +114,9 @@
   &__common-desc {
     padding: 42px 89px 67px;
     background-color: color.$white-eff;
+    @include mq.sp {
+      padding: 22px 29px 37px;
+    }
   }
 
   &__common-intro {
@@ -139,6 +142,9 @@
     font-size: 8rem;
     font-weight: 900;
     letter-spacing: -1.33px;
+    @include mq.sp {
+      font-size: 3rem;
+    }
   }
 
   &__common-txt-wrap {
@@ -198,12 +204,18 @@
     justify-content: space-between;
     gap: 79px;
     flex-wrap: wrap;
+    @include mq.sp {
+      justify-content: center;
+    }
   }
 
   &__testing-types {
     display: flex;
     align-items: center;
     gap: 19px;
+    @include mq.sp {
+      flex-direction: column;
+    }
   }
 
   &__testing-img {
