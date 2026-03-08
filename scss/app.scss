@@ -3,5 +3,16 @@
 @use "base/global";
 
 /*Common*/
+@use "components/common/header";
+@use "components/common/footer";
 
 /*Pages*/
+
+/*Foundation*/
+@import "settings";
+@import "foundation";
+@import "motion-ui";
+
+// Grids (choose one)
+@include foundation-flex-classes;
+@include foundation-flex-grid;

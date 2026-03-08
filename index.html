@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Sites</title>
+    <title>Acme Ecommerce</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +14,136 @@
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
-    <main>
-      <h1>Hello World</h1>
-    </main>
+    <header class="header">
+      <div class="header__shipping">
+        <p>FREE SHIPPING ON US ORDERS OVER $100</p>
+      </div>
+      <nav class="header__nav grid-x align-justify align-middle full-width">
+        <div class="header__blk">
+          <a href="#" class="header__bar-wrap align-justify align-middle">
+            <img
+              class="header__img"
+              src="/assets/img/header/burger-menu.svg"
+              alt="Menu"
+            />
+          </a>
+          <a class="header__logo" href="#">
+            <img src="/assets/img/header/logo.png" alt="D1 Logo" />
+          </a>
+        </div>
+        <div class="header__blk align-middle">
+          <a class="header__started align-center align-middle" href="#"
+            >GET STARTED</a
+          >
+          <a class="header__cart" href="#">
+            <p class="grid-x align-center align-middle header__cart-count">1</p>
+            <img
+              class="header__cart-icon"
+              src="/assets/img/header/cart-icon.png"
+              alt="Cart Icon"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer class="footer">
+      <div class="footer__desc">
+        <div class="footer__blk">
+          <h3 class="footer__subtitle">JOIN THE D1 CLUB</h3>
+          <p class="footer__txt">
+            Subscribe for deals, and tips on mens skincare
+          </p>
+        </div>
+        <img
+          class="footer__logo"
+          src="/assets/img/footer/footer-logo.svg"
+          alt="D1 Logo"
+        />
+      </div>
+      <div class="footer__input-wrapper">
+        <input
+          class="footer__email"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <input class="footer__input-btn" type="button" value="SUBMIT" />
+      </div>
+      <ul class="footer__list-socials">
+        <li class="footer__item-socials grid-x align-center align-middle">
+          <img
+            class="footer__item-img"
+            src="/assets/img/footer/instagram-icon.svg"
+            alt="Instagram Icon"
+          />
+        </li>
+        <li class="footer__item-socials grid-x align-center align-middle">
+          <img
+            class="footer__item-img"
+            src="/assets/img/footer/tiktok-icon.svg"
+            alt="Tiktok Icon"
+          />
+        </li>
+        <li class="footer__item-socials grid-x align-center align-middle">
+          <img
+            class="footer__item-img"
+            src="/assets/img/footer/facebook-icon.svg"
+            alt="Facebook Icon"
+          />
+        </li>
+      </ul>
+      <div class="footer__links-wrap">
+        <div class="footer-links-blk">
+          <h3 class="footer__link-subheading">Support</h3>
+          <ul class="footer__list-link">
+            <li class="footer__list-item">
+              <a href="#">Support</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">FAQS</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Account</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-blk">
+          <h3 class="footer__link-subheading">Company</h3>
+          <ul class="footer__list-link">
+            <li class="footer__list-item">
+              <a href="#">Company</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Shop</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Philosophy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__btm grid-x align-justify align-bottom full-width">
+        <p class="footer__copyright">@D1 2025 - site by manufacture</p>
+        <div class="footer__notice">
+          <p>
+            These statements have not been evaluated by the Food and Drug
+            Administration. This product is not intended to diagnose, treat,
+            cure or prevent any disease. Lorem ipsum dolor sit amet
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>

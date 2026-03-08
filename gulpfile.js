@@ -1,7 +1,7 @@
-const gulp         = require('gulp');
-const sass         = require('gulp-sass')(require('sass-embedded'));
-const browserSync  = require('browser-sync').create();
-const sourcemaps   = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass-embedded'));
+const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
 
 const includePaths = [
     'node_modules/foundation-sites/scss',
@@ -12,15 +12,15 @@ function sassBuild() {
     return gulp.src(['scss/app.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass({
-            includePaths : includePaths,
-            outputStyle  : 'compressed'
+            includePaths: includePaths,
+            outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('css'));
 };
 
 function serve() {
-    browserSync.init({server : "./"});
+    browserSync.init({ server: "./" });
     gulp.watch("scss/*.scss", sassBuild);
     gulp.watch("*.html").on('change', browserSync.reload);
 }

@@ -1,0 +1,95 @@
+@use "../../settings/colors" as color;
+@use "../../settings/font-family" as ff;
+@use "../../settings/font-weight" as fw;
+@use "../../tools/media-queries" as mq;
+
+.header {
+  width: 100%;
+  height: 65px;
+
+  &__shipping {
+    text-align: center;
+    padding: 6px 0;
+    background-color: color.$yellow-ffa;
+    font-size: 1.2rem;
+    font-weight: fw.$bold;
+    letter-spacing: 0.33px;
+  }
+
+  &__nav {
+    display: flex;
+    padding: 10px 20px;
+    @include mq.sp {
+      gap: 10px;
+    }
+  }
+
+  &__blk {
+    display: flex;
+    gap: 20px;
+    @include mq.sp {
+      gap: 10px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+  }
+
+  &__cart-count-wrap {
+    display: flex;
+  }
+
+  &__cart-count {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: auto;
+    right: -10px;
+    width: 24px;
+    height: 24px;
+    background-color: color.$black;
+    font-size: 1.6rem;
+    color: color.$white;
+    border-radius: 50px;
+  }
+
+  &__cart-icon {
+    width: 37px;
+    height: 33px;
+  }
+
+  &__bar-wrap {
+    display: flex;
+  }
+
+  &__img {
+    height: 25px;
+    @include mq.sp {
+      height: 18px;
+    }
+  }
+
+  &__logo {
+    @include mq.sp {
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  &__started {
+    display: flex;
+    width: 210px;
+    height: 46px;
+    border-radius: 35px;
+    background-color: color.$blue-222;
+    color: color.$white;
+    font-size: 1.6rem;
+    @include mq.sp {
+      width: 160px;
+      height: 36px;
+      font-size: 14px;
+    }
+  }
+}
