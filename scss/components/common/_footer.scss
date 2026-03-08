@@ -3,9 +3,6 @@
 @use "../../settings/font-weight" as fw;
 @use "../../tools/media-queries" as mq;
 
-main {
-  height: 100vh;
-}
 .footer {
   padding: 34px 68px;
   background-color: color.$blue-222;
