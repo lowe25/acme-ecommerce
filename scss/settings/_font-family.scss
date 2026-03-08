@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Aber-Mono";
+  src: url("/assets/fonts/Aber-Mono-Bold.otf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+$aber-mono: "Aber-Mono", sans-serif;
+$inter: "Inter", sans-serif;
+$roboto: "Roboto Mono", sans-serif, monospace;

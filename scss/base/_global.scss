@@ -1,0 +1,12 @@
+@use "../settings/colors" as color;
+@use "../settings/font-family" as ff;
+@use "../settings/font-weight" as fw;
+
+html {
+  font-family: ff.$aber-mono;
+  font-size: 10px;
+  font-weight: fw.$medium;
+  color: color.$black;
+  scroll-behavior: smooth;
+  text-align: justify;
+}
