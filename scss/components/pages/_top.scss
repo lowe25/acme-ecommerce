@@ -1,0 +1,241 @@
+@use "../../settings/colors" as color;
+@use "../../settings/font-family" as ff;
+@use "../../settings/font-weight" as fw;
+@use "../../tools/media-queries" as mq;
+
+.top {
+  &__mv {
+    padding: 82px 70px 62px;
+    background: linear-gradient(
+      232deg,
+      rgba(70, 78, 112, 1) 0%,
+      rgba(32, 55, 70, 1) 100%
+    );
+    @include mq.sp {
+      padding: 40px 20px 62px;
+    }
+  }
+
+  &__mv-container {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  &__mv-content {
+    display: flex;
+    @include mq.max(1010px) {
+      flex-wrap: wrap;
+      gap: 60px;
+      justify-content: center;
+    }
+  }
+
+  &__mv-title {
+    font-family: ff.$inter;
+    font-size: 6.4rem;
+    font-weight: 900;
+    letter-spacing: -1.07px;
+    line-height: 53px;
+    color: color.$white;
+    @include mq.max(820px) {
+      font-size: 54px;
+      line-height: initial;
+    }
+    @include mq.max(610px) {
+      font-size: 35px;
+    }
+    @include mq.max(400px) {
+      font-size: 26px;
+    }
+  }
+
+  &__mv-img {
+    width: 611px;
+    height: 617px;
+    object-fit: contain;
+    object-position: center;
+    @include mq.max(1010px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__mv-txt {
+    margin: 19px 0 19px;
+    font-size: 1.8rem;
+    color: color.$white;
+    @include mq.sp {
+      font-size: 16px;
+    }
+  }
+
+  &__mv-try {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color.$yellow-ffa;
+    border-radius: 35px;
+    width: 314px;
+    height: 56px;
+    font-size: 1.8rem;
+    @include mq.sp {
+      width: 100%;
+    }
+  }
+
+  &__mv-review {
+    margin-top: -14%;
+  }
+
+  &__mv-review-nme {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  &__mv-review-img {
+    height: 39px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__mv-review-name {
+    font-size: 1.4rem;
+    font-weight: fw.$bold;
+    color: color.$white;
+  }
+
+  &__mv-review-txt {
+    margin: 15px 0 18px;
+    font-size: 1.8rem;
+    color: color.$white;
+  }
+
+  &__common-desc {
+    padding: 42px 89px 67px;
+    background-color: #eff7fa;
+  }
+
+  &__common-intro {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 14px 20px 18px;
+    width: 100%;
+    border-radius: 28px;
+    background-color: color.$yellow-ffa;
+  }
+
+  &__common-wrap {
+    margin-top: 82px;
+    display: flex;
+    gap: 70px;
+    @include mq.max(1105px) {
+      flex-direction: column;
+    }
+  }
+
+  &__common-subtitle {
+    font-family: ff.$inter;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: -1.33px;
+  }
+
+  &__common-txt-wrap {
+    margin-top: 32px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid color.$white-eff;
+  }
+
+  &__common-txt {
+    font-size: 1.8rem;
+  }
+
+  &__common-list {
+    list-style: none;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  &__common-item {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background: url("../assets/img/top/chk.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__common-item {
+    font-size: 1.8rem;
+  }
+
+  &__common-img {
+    width: 568px;
+    height: 670px;
+    @include mq.max(1105px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__testing {
+    margin-top: 67px;
+    background-color: color.$white;
+    padding: 74px 38px;
+    border-radius: 52px;
+    display: flex;
+    justify-content: space-between;
+    gap: 79px;
+    flex-wrap: wrap;
+  }
+
+  &__testing-types {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+  }
+
+  &__testing-img {
+    width: 135px;
+    height: 135px;
+  }
+
+  &__testing-txt {
+    font-size: 1.8rem;
+    @include mq.sp {
+      font-size: 16px;
+    }
+  }
+
+  &__day {
+    padding: 116px 0 86px;
+    background-color: #eff7fa;
+    text-align: center;
+  }
+
+  &__day-intro {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  &__day-intro-img {
+    margin: 30px 0 30px;
+  }
+
+  &__day-title {
+    font-family: ff.$inter;
+    font-size: 8rem;
+    font-weight: 900;
+  }
+}
